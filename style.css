@@ -1,11 +1,11 @@
 .startTalk {
     position: fixed;
     bottom: 0;
-    left: auto;
+    left: 0%;
 }
 
 .stopTalk {
     position: fixed;
     bottom: 0;
-    left: auto;
+    left: 75%;
 }
