@@ -10,7 +10,7 @@
 
         const startBtn = document.getElementById("startBtn");
         const stopBtn = document.getElementById("stopBtn");
-        const output = document.getElementById("output");
+        const output = document.getElementById("textSpeech");
 
         let finalTranscript = "";
 
@@ -24,7 +24,7 @@
                     interimTranscript += transcript;
                 }
             }
-            output.textContent = finalTranscript + interimTranscript;
+            output.setAttribute("text", "value: " + finalTranscript + interimTranscript + ";");
         };
 
         recognition.onerror = (event) => {
